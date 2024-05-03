@@ -1,7 +1,6 @@
 import React, { Children } from 'react'
 
-export default function Container({children}) {
-    const colWidth = 250;
+export default function Container({children, cardWidth}) {
     const rowHeight = 10;
     const style = {
       
@@ -9,7 +8,7 @@ export default function Container({children}) {
         width: "100%",
         position: "absolute",
         display: "grid",
-        gridTemplateColumns: `repeat(auto-fill, ${colWidth}px`,
+        gridTemplateColumns: `repeat(auto-fill, ${cardWidth*10}px`,
         gridAutoRows: `${rowHeight}px`,
         justifyContent: "center"
     }
