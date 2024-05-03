@@ -9,8 +9,9 @@ function App() {
   return (
     <> 
       <Navigator></Navigator>
+      
       <Gallery cardWidth={cardWidth} >
-        {[...Array(100)].map( () => <Card cardWidth={cardWidth} cardHeight={20 + Math.floor(Math.random()*60)}></Card>)}
+        {[...Array(100)].map( () => <Card cardWidth={cardWidth} cardHeight={15 + Math.floor(Math.random()*60)}></Card>)}
         
       </Gallery>
 
