@@ -18,7 +18,7 @@ export default function Navigator() {
   }
   const btn = "rounded-full p-3  text-center font-semibold "
   const btnIcon = "hover:bg-neutral-200 shrink-0"
-  const btnTag = "focus:bg-neutral-900 focus:text-white px-4"
+  const btnTag = "target:bg-neutral-900 target:text-white px-5 p-4"
   return (
     <nav style={style.nav} className=''>
       {/* Logo */}
@@ -33,7 +33,7 @@ export default function Navigator() {
       <a className={`${btn + btnTag} `}  href="#create" id='create'>Create</a>
       
       {/* Search bar */}
-      <input className="grow h-12 ps-6 text-start bg-neutral-200 hover:bg-neutral-300 rounded-full  outline-blue-300" 
+      <input className="grow h-12 ps-6 m-2 text-start bg-neutral-200 hover:bg-neutral-300 rounded-full  outline-0 ring-blue-300 focus:ring-4" 
       type="text" placeholder="Search"/>
       
       {/* notification */}
