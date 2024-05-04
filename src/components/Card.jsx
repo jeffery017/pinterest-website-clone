@@ -6,7 +6,7 @@ import moreinfo from '../assets/more-info.svg'
 
 export default function Card({width, height, unit, isMobile}) {
   
-    const relativeUnit = isMobile?width/unit/4: unit
+    const relativeUnit = isMobile?width/unit/2: unit
     const style = {
         borderRadius: "15px", 
         gridRowEnd: `span ${Math.floor(height/relativeUnit)}`

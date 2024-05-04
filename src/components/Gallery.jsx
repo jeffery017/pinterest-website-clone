@@ -18,8 +18,7 @@ export default function Container({children, isMobile}) {
 
 
   return (
-    <>
-    <h1>{isMobile? "M":"D"}</h1>
+    <> 
     <div style={style} className='absolute top-0 w-full p-2 md:p-0 md:top-8'>
       {
         heights.map(height => <Card 
