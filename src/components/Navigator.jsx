@@ -23,7 +23,7 @@ export default function Navigator() {
     <nav style={style.nav} className=''>
       {/* Logo */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="src/assets/pinterest-logo.svg" alt="logo"  className='w-6'/>
+        <img src="src/assets/pinterest-logo.png" alt="logo"  className='w-6'/>
       </a> 
       {/* Home */}
       <a className={`${btn + btnTag} `}  href="#home" id='home'>Home</a>
@@ -43,7 +43,7 @@ export default function Navigator() {
       </a>
       {/* message */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="src/assets/messages.svg" alt="logo"  className='w-6 '/>
+        <img src="src/assets/messages.png" alt="logo"  className='w-6 '/>
       </a>
       {/* account */}
       <a className={`${btn + btnIcon} `} href="#">

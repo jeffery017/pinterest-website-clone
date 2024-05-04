@@ -25,7 +25,7 @@ export default function Card({cardWidth, cardHeight}) {
           {/* url button */}
           <a href="" className=''>
             <div className= {`${btn} h-8 px-4 bg-white opacity-85 hover:opacity-100` }>
-              <img src="src/assets/top-right-arrow.svg" alt="" className='w-3 me-2'/>
+              <img src="src/assets/top-right-arrow.png" alt="" className='w-3 me-2'/>
             unsplash.com
             </div>
           </a>
