@@ -39,7 +39,7 @@ export default function Navigator() {
       {/* notification */}
       <a className={`${btn + btnIcon} relative block `} href="#">
         <img src="src/assets/notifications.png" alt="logo"  className='w-6 fill-orange-500'/>
-        <div className="size-5 bg-red-600 text-white rounded-full text-xs flex justify-center items-center font-normal absolute top-0.5 right-0.5">12</div>
+        <div className="size-5 bg-red-600 text-white rounded-full text-xs flex justify-center items-center font-normal absolute top-0.5 right-0.5">17</div>
       </a>
       {/* message */}
       <a className={`${btn + btnIcon} `} href="#">
