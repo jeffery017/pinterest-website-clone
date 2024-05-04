@@ -20,11 +20,14 @@ export default function Navigator({isMobile}) {
       backgroundColor: "white",
     }, 
   }
+  const nav = "h-20 p-4 fixed w-full rounded-none flex items-center justify-center z-10 bg-white bottom-0 shadow-md"
+  const navMd = "md:m-10 md:rounded-full "
+  const navLg = "lg:m-0 lg:rounded-none lg:top-0 lg:shadow-none"
   const btn = "rounded-full p-3  text-center font-semibold "
   const btnIcon = "hover:bg-neutral-200 shrink-0"
   const btnTag = "target:bg-neutral-900 target:text-white px-5 p-4"
   return (
-    <nav style={style.nav} className=''>
+    <nav  className={`${nav} ${navMd} ${navLg}`}>
       {/* Logo */}
       <a className={`${btn + btnIcon} `} href="#">
         <img src={logo} alt="logo"  className='w-6'/>
@@ -33,9 +36,9 @@ export default function Navigator({isMobile}) {
       <a className={`${btn + btnTag} `}  href="#home" id='home'>Home</a>
       
       {/* Explore */}
-      {!isMobile && <a className={`${btn + btnTag} `}  href="#explore" id='explore'>Explore</a>}
+      {<a className={`${btn + btnTag} hidden md:flex`}  href="#explore" id='explore'>Explore</a>}
       {/* Create */}
-      {!isMobile && <a className={`${btn + btnTag} `}  href="#create" id='create'>Create</a>}
+      { <a className={`${btn + btnTag} hidden md:flex`}  href="#create" id='create'>Create</a>}
       
       {/* Search bar */}
       {!isMobile && <input className="grow h-12 ps-6 m-2 text-start bg-neutral-200 hover:bg-neutral-300 rounded-full  outline-0 ring-blue-300 focus:ring-4" 
