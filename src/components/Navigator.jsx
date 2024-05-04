@@ -11,7 +11,7 @@ export default function Navigator() {
       justifyContent: "center",
       alignItems: "center",
 
-      zIndex: "2",
+      zIndex: "1",
 
       backgroundColor: "white",
     }, 
@@ -23,7 +23,7 @@ export default function Navigator() {
     <nav style={style.nav} className=''>
       {/* Logo */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="/src/assets/pinterest-logo.svg" alt="logo"  className='w-6'/>
+        <img src="src/assets/pinterest-logo.svg" alt="logo"  className='w-6'/>
       </a> 
       {/* Home */}
       <a className={`${btn + btnTag} `}  href="#home" id='home'>Home</a>
@@ -38,12 +38,12 @@ export default function Navigator() {
       
       {/* notification */}
       <a className={`${btn + btnIcon} relative block `} href="#">
-        <img src="/src/assets/notifications.svg" alt="logo"  className='w-6 fill-orange-500'/>
+        <img src="src/assets/notifications.svg" alt="logo"  className='w-6 fill-orange-500'/>
         <div className="size-5 bg-red-600 text-white rounded-full text-xs flex justify-center items-center font-normal absolute top-0.5 right-0.5">10</div>
       </a>
       {/* message */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="/src/assets/messages.svg" alt="logo"  className='w-6 '/>
+        <img src="src/assets/messages.svg" alt="logo"  className='w-6 '/>
       </a>
       {/* account */}
       <a className={`${btn + btnIcon} `} href="#">
@@ -53,7 +53,7 @@ export default function Navigator() {
       </a>
       {/* more */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="/src/assets/more.svg" alt="logo"  className='w-4  '/>
+        <img src="src/assets/more.svg" alt="logo"  className='w-4  '/>
       </a>
     </nav>
   )
