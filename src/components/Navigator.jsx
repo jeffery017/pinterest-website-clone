@@ -11,7 +11,7 @@ export default function Navigator() {
       justifyContent: "center",
       alignItems: "center",
 
-      zIndex: "1",
+      zIndex: "2",
 
       backgroundColor: "white",
     }, 
