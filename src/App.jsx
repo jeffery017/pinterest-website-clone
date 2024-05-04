@@ -15,7 +15,7 @@ function App() {
 
   return (
     <> 
-      <Navigator></Navigator>
+      <Navigator isMobile={isMobile}></Navigator>
       
       <Gallery cardWidth={cardWidth} isMobile={isMobile} unit={unit}>
         {[...Array(100)].map( () => <Card cardWidth={cardWidth} cardHeight={15 + Math.floor(Math.random()*60)} isMobile={isMobile} unit={unit}></Card>)}

@@ -4,7 +4,7 @@ import notifications from '../assets/notifications.svg'
 import more from '../assets/more.svg'
 import messages from '../assets/messages.svg'
 
-export default function Navigator() {
+export default function Navigator({isMobile}) {
   const style = {
     nav: {
       padding:"20px",
@@ -31,14 +31,15 @@ export default function Navigator() {
       </a> 
       {/* Home */}
       <a className={`${btn + btnTag} `}  href="#home" id='home'>Home</a>
+      
       {/* Explore */}
-      <a className={`${btn + btnTag} `}  href="#explore" id='explore'>Explore</a>
+      {!isMobile && <a className={`${btn + btnTag} `}  href="#explore" id='explore'>Explore</a>}
       {/* Create */}
-      <a className={`${btn + btnTag} `}  href="#create" id='create'>Create</a>
+      {!isMobile && <a className={`${btn + btnTag} `}  href="#create" id='create'>Create</a>}
       
       {/* Search bar */}
-      <input className="grow h-12 ps-6 m-2 text-start bg-neutral-200 hover:bg-neutral-300 rounded-full  outline-0 ring-blue-300 focus:ring-4" 
-      type="text" placeholder="Search"/>
+      {!isMobile && <input className="grow h-12 ps-6 m-2 text-start bg-neutral-200 hover:bg-neutral-300 rounded-full  outline-0 ring-blue-300 focus:ring-4" 
+      type="text" placeholder="Search"/>}
       
       {/* notification */}
       <a className={`${btn + btnIcon} relative block `} href="#">
