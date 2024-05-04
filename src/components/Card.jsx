@@ -1,4 +1,8 @@
 import React from 'react'
+import trarrow from '../assets/top-right-arrow.svg'
+import share from '../assets/share.svg'
+import moreinfo from '../assets/more-info.svg'
+
 
 export default function Card({cardWidth, cardHeight}) {
     const style = {
@@ -25,7 +29,7 @@ export default function Card({cardWidth, cardHeight}) {
           {/* url button */}
           <a href="" className=''>
             <div className= {`${btn} h-8 px-4 bg-white opacity-85 hover:opacity-100` }>
-              <img src="./src/assets/top-right-arrow.png" alt="" className='w-3 me-2'/>
+              <img src={trarrow} alt="" className='w-3 me-2'/>
             unsplash.com
             </div>
           </a>
@@ -33,14 +37,14 @@ export default function Card({cardWidth, cardHeight}) {
           {/* share button */}
           <a href="" className=''>
             <div className={`${btn} bg-white size-8  p-2  opacity-100 hover:opacity-90`}>
-              <img src="./src/assets/share.png" alt="" className='w-full '/>
+              <img src={share} alt="" className='w-full '/>
             </div>
           </a>
 
           {/* more info */}
           <a href="" className=''>
             <div className={`${btn} bg-white size-8 p-1.5 opacity-100 hover:opacity-90`}>
-              <img src="src/assets/more-info.png" alt="" className='w-full '/>
+              <img src={moreinfo} alt="" className='w-full '/>
             </div>
           </a>
       </div>
