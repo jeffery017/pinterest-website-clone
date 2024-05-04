@@ -47,7 +47,7 @@ export default function Navigator() {
       </a>
       {/* message */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="./src/assets/messages.png" alt="logo"  className='w-6 '/>
+        <img src={messages} alt="logo"  className='w-6 '/>
       </a>
       {/* account */}
       <a className={`${btn + btnIcon} `} href="#">
