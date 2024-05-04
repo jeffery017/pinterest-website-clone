@@ -38,7 +38,7 @@ export default function Navigator() {
       
       {/* notification */}
       <a className={`${btn + btnIcon} relative block `} href="#">
-        <img src="src/assets/notifications.svg" alt="logo"  className='w-6 fill-orange-500'/>
+        <img src="src/assets/notifications.png" alt="logo"  className='w-6 fill-orange-500'/>
         <div className="size-5 bg-red-600 text-white rounded-full text-xs flex justify-center items-center font-normal absolute top-0.5 right-0.5">12</div>
       </a>
       {/* message */}
@@ -53,7 +53,7 @@ export default function Navigator() {
       </a>
       {/* more */}
       <a className={`${btn + btnIcon} `} href="#">
-        <img src="src/assets/more.svg" alt="logo"  className='w-4  '/>
+        <img src="src/assets/more.png" alt="logo"  className='w-4  '/>
       </a>
     </nav>
   )

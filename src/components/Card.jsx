@@ -33,14 +33,14 @@ export default function Card({cardWidth, cardHeight}) {
           {/* share button */}
           <a href="" className=''>
             <div className={`${btn} bg-white size-8  p-2  opacity-100 hover:opacity-90`}>
-              <img src="src/assets/share.svg" alt="" className='w-full '/>
+              <img src="src/assets/share.png" alt="" className='w-full '/>
             </div>
           </a>
 
           {/* more info */}
           <a href="" className=''>
             <div className={`${btn} bg-white size-8 p-1.5 opacity-100 hover:opacity-90`}>
-              <img src="src/assets/more-info.svg" alt="" className='w-full '/>
+              <img src="src/assets/more-info.png" alt="" className='w-full '/>
             </div>
           </a>
       </div>
