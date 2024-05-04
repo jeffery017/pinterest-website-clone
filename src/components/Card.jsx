@@ -4,9 +4,9 @@ import share from '../assets/share.svg'
 import moreinfo from '../assets/more-info.svg'
 
 
-export default function Card({cardWidth, cardHeight}) {
+export default function Card({cardWidth, cardHeight, unit}) {
     const style = {
-        margin: "10px", 
+        margin:`${unit}px`,
         borderRadius: "15px", 
         gridRowEnd: `span ${cardHeight}`
     }
@@ -16,7 +16,7 @@ export default function Card({cardWidth, cardHeight}) {
     <div style={style} className='bg-neutral-300  relative overflow-hidden cursor-pointer'>
       {/* https://picsum.photos/${cardWidth*10}/${cardHeight*10} */}
       {/* https://source.unsplash.com/random/200x200 */}
-      <img src={`https://source.unsplash.com/random/${cardWidth*10}x${cardHeight*10} `} alt=""  className='h-full w-full'/>
+      <img src={`https://source.unsplash.com/random/${cardWidth*unit}x${cardHeight*unit} `} alt=""  className='h-full w-full'/>
       <div className='w-full h-full hover:opacity-100 opacity-0 absolute top-0'>
         {/* Mask */}
         <div className=' h-full bg-black opacity-45'></div>
