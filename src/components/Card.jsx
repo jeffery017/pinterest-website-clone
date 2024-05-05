@@ -31,10 +31,10 @@ export default function Card({width, height, unit, isMobile}) {
         {/* dashboard */}
         <div className='w-full p-3 flex absolute bottom-0 space-x-2'> 
           {/* url button */}
-          <a href="" className=''>
-            <div className= {`${btn} h-8 px-4 bg-white opacity-85 hover:opacity-100` }>
-              <img src={trarrow} alt="" className='w-3 me-2'/>
-              { imgSource }
+          <a href="" className='shrink'>
+            <div className= {`${btn}  h-8 px-4 bg-white opacity-85 hover:opacity-100` }>
+              <img src={trarrow} alt="" className='w-2.5 me-1.5'/>
+              <span className='w-16 truncate text-sm font-semibold'>{ imgSource }</span>
             </div>
           </a>
           <div className='w-1 grow'></div>
